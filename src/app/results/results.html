@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    @for (movieData of MovieAPIService.movies(); track movieData.imdbID;){
+        <div class="card movieCard mb-3">
+            <div class="card-body">
+                <div class="movieInfo">
+                    <h5 class="movieTitle mb-1">{{movieData.Title}}</h5>
+                    <p class="movieText">{{movieData.Year}}</p>
+                </div>
+                <a class="btn btn-warning viewBtn" [routerLink]="['/movie', movieData.imdbID]">View Details</a>
+            </div>
+        </div>
+    }
+</div>
+<div class="pagination mt-4" style="justify-content: center;">
+    <button class="btn btn-outline-warning me-2" (click)="MovieAPIService.previousPage()" [disabled]="MovieAPIService.currentPage() === 1">Previous</button>
+    <button class="btn btn-outline-warning me-2" (click)="MovieAPIService.nextPage()" 
+    [disabled]="MovieAPIService.currentPage() === MovieAPIService.maxPages() || MovieAPIService.maxPages() === 0">Next</button>
+    <p class="pageText mt-2">Page {{MovieAPIService.currentPage()}} out of {{MovieAPIService.maxPages()}}</p>
+</div>

@@ -1,0 +1,33 @@
+.movieCard{
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+}
+.movieCard:hover{
+    border-color: #f5c518;
+    transform: scale(1.05);
+}
+.movieTitle{
+    color: #f5c518;
+    font-weight: 700;
+}
+.movieText{
+    color: #bbbbbb;
+    font-size: 1rem;
+}
+.viewBtn{
+    font-weight: 700;
+    border-radius: 6px;
+}
+.viewBtn:hover{
+    background-color: #ff3b3b;
+    border-color: #ff3b3b;
+    color: white;
+}
+.pagination{
+    color: white;
+}
+.pageText{
+    color: #cccccc;
+}

@@ -1,0 +1,36 @@
+ <body>
+ @if (OmdbAPIService.movie(); as movieData){
+    @if (movieData.Response === 'True'){
+        <div class="container py-5">
+            <div class="mb-4 text-center">
+                <button class="btn backBtn" (click)="goHome()">Go Back</button>
+            </div>
+            <div class="card movieDetails mx-auto">
+                <div class="row">
+                    <div class="col-md-4 text-center poster">
+                        <img class="img-fluid moviePoster" [src]="movieData.Poster">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body p-4">
+                            <h2 class="movieHeading mb-3">{{movieData.Title}}</h2>
+                            <div class="mb-3">
+                                <span class="detailGroup">{{movieData.Year}}</span>
+                                <span class="detailGroup">{{movieData.Rated}}</span>
+                                <span class="detailGroup">{{movieData.Runtime}}</span>
+                            </div>
+                            <p class="extraInfo"><span class="detailMore">Genre:</span> {{movieData.Genre}}</p>
+                            <p class="extraInfo"><span class="detailMore">Director:</span> {{movieData.Director}}</p>
+                            <p class="extraInfo"><span class="detailMore">Writer:</span> {{movieData.Writer}}</p>
+                            <p class="extraInfo"><span class="detailMore">Actors:</span> {{movieData.Actors}}</p>
+                            <p class="extraInfo plotText text-secondary">
+                                <span class="detailMore">Plot:</span> {{movieData.Plot}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+ </body>
+    

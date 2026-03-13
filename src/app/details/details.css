@@ -1,0 +1,62 @@
+body{
+    background-color: #0f0f0f;
+    padding-bottom: 200px;
+}
+.movieDetails{
+    background-color: #1f1f1f;
+  color: #d4af37;
+  border: 3px solid #d4af37;
+  border-radius: 18px;
+  max-width: 1000px;
+}
+.moviePoster{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.movieHeading{
+    color: #f5c518;
+    font-weight: 700;
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+.extraInfo{
+    color: #f3e7b3;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+.detailMore{
+    color: #f5c518;
+    font-weight: 700;
+    margin-right: 6px;
+}
+.plotText{
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.detailGroup{
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #f5c518;
+    border: 1px solid #d4af37;
+    border-radius: 999px;
+    padding: 6px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.backBtn{
+    background-color: #d4af37;
+    color: #111;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.backBtn:hover{
+    background-color: #b22222;
+    color: white;
+    transform: scale(1.05);
+}

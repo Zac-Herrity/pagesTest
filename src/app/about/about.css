@@ -1,0 +1,12 @@
+.aboutCard {
+    background-color: #1f1f1f;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  .aboutText {
+    color: #f5c518;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
